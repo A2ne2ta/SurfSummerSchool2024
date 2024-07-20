@@ -54,7 +54,6 @@ class DetailPersonViewController: UIViewController {
         view.layer.masksToBounds = true
         view.layer.cornerRadius = 10
         
-        
         return view
     }()
     
@@ -180,6 +179,3 @@ class DetailPersonViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
 }
-
-
-

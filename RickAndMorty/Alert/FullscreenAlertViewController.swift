@@ -127,4 +127,3 @@ final class FullscreenAlertViewController: UIViewController {
         dismiss(animated: true, completion: dismissAction)
     }
 }
-

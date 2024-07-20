@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 protocol PersonsViewModelProtocol {
     var reloadData: (() -> Void)? { get set }
     var showError: ((String) -> Void)? { get set }
@@ -60,12 +59,5 @@ final class PersonsViewModel: PersonsViewModelProtocol {
     
     private func convertToCellViewModel(_ characters: [CharacterResponseObject]) {
         self.characters += characters
-    }
-    
-    private func setupMockObjects() {
-//        characters = [ CharacterResponseObject(name: "First Karl", image: URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")!, status: .Alive, species: "Human", gender: "Male", episode: [URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")!], location: CharacterLocation(name: "Earth")),
-//                       CharacterResponseObject(name: "First Karl", image: URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")!, status: .alive, species: "Human", gender: "Male", episode: [URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")!], location: CharacterLocation(name: "Earth")),
-//                       CharacterResponseObject(name: "Second Karl", image: URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")!, status: .alive, species: "Human", gender: "Male", episode: [URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")!], location: CharacterLocation(name: "Earth"))
-//        ]
     }
 }

@@ -40,7 +40,7 @@ final class PersonsCollectionViewCell: UICollectionViewCell {
         label.textColor = .white
         label.text = "Alive"
         
-       return label
+        return label
     }()
     
     private lazy var pointLabel: UILabel = {
@@ -49,10 +49,9 @@ final class PersonsCollectionViewCell: UICollectionViewCell {
         label.font = UIFont(name: "IBMPlexSans-SemiBold", size: 12)
         label.textColor = .white
         label.text = "•"
-
+        
         return label
     }()
-    
     
     private lazy var speciesLabel: UILabel = {
         let label = UILabel()
@@ -96,9 +95,7 @@ final class PersonsCollectionViewCell: UICollectionViewCell {
         imageView.kf.setImage(with: character.image)
     }
     
-    
     //MARK: - Private methods
-    
     private func setupUI() {
         addSubview(imageView)
         addSubview(titleLabel)
@@ -106,7 +103,7 @@ final class PersonsCollectionViewCell: UICollectionViewCell {
         addSubview(pointLabel)
         addSubview(speciesLabel)
         addSubview(genderLabel)
-  
+        
         setupConstraints()
     }
     
@@ -144,6 +141,4 @@ final class PersonsCollectionViewCell: UICollectionViewCell {
             make.trailing.equalToSuperview()
         }
     }
-    
-    
 }

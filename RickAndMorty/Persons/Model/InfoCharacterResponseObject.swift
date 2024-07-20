@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct InfoCharacterResponseObject: Codable {
     let count: Int
     let pages: Int

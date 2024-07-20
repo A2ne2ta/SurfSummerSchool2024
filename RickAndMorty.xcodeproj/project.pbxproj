@@ -97,12 +97,12 @@
 				848B29EC2C4A217600D1CF3B /* ApiManager.swift */,
 				848B29EE2C4A28DF00D1CF3B /* NetworkingError.swift */,
 				848B29DE2C49BB2800D1CF3B /* Persons */,
+				848B29DD2C49BA9C00D1CF3B /* Datails */,
+				848B2A142C4B7D9700D1CF3B /* Alert */,
+				848B29D82C48E69C00D1CF3B /* Extensions */,
 				848B29C42C487DB400D1CF3B /* Assets.xcassets */,
 				848B29C62C487DB400D1CF3B /* LaunchScreen.storyboard */,
 				848B29C92C487DB400D1CF3B /* Info.plist */,
-				848B29DD2C49BA9C00D1CF3B /* Datails */,
-				848B29D82C48E69C00D1CF3B /* Extensions */,
-				848B29F72C4B279900D1CF3B /* FullscreenAlertViewController.swift */,
 			);
 			path = RickAndMorty;
 			sourceTree = "<group>";
@@ -189,6 +189,14 @@
 				848B2A0D2C4B773500D1CF3B /* IBMPlexSans-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		848B2A142C4B7D9700D1CF3B /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				848B29F72C4B279900D1CF3B /* FullscreenAlertViewController.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

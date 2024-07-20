@@ -9,7 +9,6 @@
 import UIKit
 import SnapKit
 
-
 final class PersonsListViewController: UIViewController {
     //MARK: - GUI Variables
     private lazy var nameTitleLabel: UILabel = {
@@ -29,7 +28,7 @@ final class PersonsListViewController: UIViewController {
         let width = (view.frame.width - 20)
         layout.itemSize = CGSize(width: width, height: 96)
         layout.minimumLineSpacing = 4
-
+        
         
         let collectionView = UICollectionView(frame: CGRect(x: 0,
                                                             y: 0,
@@ -44,7 +43,6 @@ final class PersonsListViewController: UIViewController {
         return collectionView
     }()
     
-    
     //MARK: - Properties
     private var viewModel: PersonsViewModelProtocol
     
@@ -53,7 +51,6 @@ final class PersonsListViewController: UIViewController {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
         self.setupViewModel()
-       
     }
     
     required init?(coder: NSCoder) {
@@ -70,8 +67,6 @@ final class PersonsListViewController: UIViewController {
     }
     
     //MARK: - Private methods
-    
-    
     private func setupViewModel() {
         viewModel.reloadData = { [weak self] in
             self?.collectionView.reloadData()
@@ -83,7 +78,7 @@ final class PersonsListViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
     }
-                    
+    
     private func setupUI() {
         view.backgroundColor = .black
         view.addSubview(nameTitleLabel)
@@ -108,7 +103,8 @@ final class PersonsListViewController: UIViewController {
         }
     }
 }
-    //MARK: - UICollectionViewDataSource
+
+//MARK: - UICollectionViewDataSource
 extension PersonsListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel.numberOfCells
@@ -141,4 +137,3 @@ extension PersonsListViewController: UICollectionViewDelegate {
         }
     }
 }
-
